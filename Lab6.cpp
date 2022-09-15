@@ -15,9 +15,15 @@ int max(int a, int b){
 }
 
 // LAB QUESTION 3 - Write a function with an if statement
-
-//    (YOUR CODE HERE)
-
+//parameters 
+int min(int a, int b){
+    if ( a > b ){
+        return b;
+    } else {
+        return a;
+    }
+}
+ 
 
 void main(){
     cout << "Which is larger, 42 or 96? " << max(42, 96) << endl;
@@ -26,18 +32,18 @@ void main(){
     //cout << "Which is smaller, 12 or 100? " << min(12, 100) << endl;
 
     //LAB QUESTION 5 - Comment out the next line
-    return;
+    //return;
 
     //LAB QUESTIONS 6 & 7 is about this code:
 
     //Starting at zero, count to 10
     cout << "Couning to ten!" << endl;
     int number = 0;
-    tryTheNextNumber:
-    if ( number <= 10 ){
+   
+    while ( number <= 10 ){
         cout << "In the loop, number = " << number << endl;
         number = number + 1;
-        goto tryTheNextNumber;
+       
     }
 
     cout << "I counted to ten, and the number variable = " << number << endl;
